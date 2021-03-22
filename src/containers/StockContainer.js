@@ -8,7 +8,9 @@ class StockContainer extends Component {
       <div>
         <h2>Stocks</h2>
         {
+          this.props.stocks.map(stock => <Stock onClick={() => this.props.addStock(stock)} stock={stock}/>)
           //render the list of stocks here
+          
         }
       </div>
     );
