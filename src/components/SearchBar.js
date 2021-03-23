@@ -21,6 +21,7 @@ const SearchBar = ({ sort, toggleAlphabeticalSort, togglePriceSort, setType }) =
           <option value="Tech">Tech</option>
           <option value="Sportswear">Sportswear</option>
           <option value="Finance">Finance</option>
+          <option value="All">All</option>
         </select>
       </label>
 
