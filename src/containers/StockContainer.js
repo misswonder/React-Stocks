@@ -11,7 +11,7 @@ class StockContainer extends Component {
           this.props.stocks.map(stock => <Stock onClick={() => this.props.addStock(stock)} stock={stock}/>)
           //render the list of stocks here
           
-        }
+        }  
       </div>
     );
   }

@@ -17,10 +17,13 @@ class MainContainer extends Component {
     this.setState({ stocks });
   };
 
-  addStock = (stock) =>
-    this.setState({
-      portfolio: [...this.state.portfolio, stock],
-    });
+  addStock = (stock) => {
+    if (this.state.portfolio.includes(stock)) {
+      this.setState({
+        portfolio: [...this.state.portfolio, stock],
+      });
+    }
+  };
 
   removeStock = (stock) =>
     this.setState({
